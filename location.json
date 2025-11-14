@@ -1,0 +1,132 @@
+[
+  {
+    "type": "Room",
+    "label": "TL",
+    "explore_time": 1,
+    "size": 5,
+    "person_list": [
+      { "id": 1, "velocity": 3 },
+      { "id": 2, "velocity": 1 },
+      { "id": 3, "velocity": 1 },
+      { "id": 4, "velocity": 2 },
+      { "id": 5, "velocity": 1 },
+      { "id": 6, "velocity": 2 },
+      { "id": 7, "velocity": 1 },
+      { "id": 8, "velocity": 2 },
+      { "id": 9, "velocity": 1 },
+      { "id": 10, "velocity": 1 }
+    ]
+  },
+  {
+    "type": "Room",
+    "label": "TM",
+    "explore_time": 10,
+    "size": 5,
+    "person_list": [
+      { "id": 11, "velocity": 3 },
+      { "id": 12, "velocity": 4 },
+      { "id": 13, "velocity": 1 },
+      { "id": 14, "velocity": 5 },
+      { "id": 15, "velocity": 5 },
+      { "id": 16, "velocity": 5 }
+    ]
+  },
+  {
+    "type": "Room",
+    "label": "TR",
+    "explore_time": 1,
+    "size": 4,
+    "person_list": [
+      { "id": 17, "velocity": 2 },
+      { "id": 18, "velocity": 3 },
+      { "id": 19, "velocity": 6 },
+      { "id": 20, "velocity": 1 },
+      { "id": 21, "velocity": 6 },
+      { "id": 22, "velocity": 6 }
+    ]
+  },
+  {
+    "type": "Room",
+    "label": "BL",
+    "explore_time": 6,
+    "size": 3,
+    "person_list": []
+  },
+  {
+    "type": "Room",
+    "label": "BM",
+    "explore_time": 3,
+    "size": 6,
+    "person_list": [
+      { "id": 23, "velocity": 1 },
+      { "id": 24, "velocity": 6 },
+      { "id": 25, "velocity": 4 },
+      { "id": 26, "velocity": 1 },
+      { "id": 27, "velocity": 3 }
+    ]
+  },
+  {
+    "type": "Room",
+    "label": "BR",
+    "explore_time": 3,
+    "size": 1,
+    "person_list": [
+      { "id": 28, "velocity": 5 }
+    ]
+  },
+  {
+    "type": "Hallway",
+    "label": "H_L",
+    "explore_time": 0,
+    "person_list": []
+  },
+  {
+    "type": "Hallway",
+    "label": "H_M",
+    "explore_time": 0,
+    "person_list": []
+  },
+  {
+    "type": "Hallway",
+    "label": "H_R",
+    "explore_time": 0,
+    "person_list": []
+  },
+  {
+    "type": "EXIT",
+    "label": "EXIT_L",
+    "explore_time": 0,
+    "person_list": []
+  },
+  {
+    "type": "EXIT",
+    "label": "EXIT_R",
+    "explore_time": 0,
+    "person_list": []
+  },
+  {    
+    "type": "EDGE",
+    "u": "EXIT_L",
+    "v": "H_L",
+    "weight": 5
+  },
+  {    
+    "type": "EDGE",
+    "u": "H_L",
+    "v": "H_M",
+    "weight": 5
+  },
+  {    
+    "type": "EDGE",
+    "u": "H_M",
+    "v": "H_R",
+    "weight": 5
+  },
+  {    
+    "type": "EDGE",
+    "u": "H_R",
+    "v": "EXIT_R",
+    "weight": 5
+  }
+
+]
